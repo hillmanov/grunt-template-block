@@ -26,11 +26,9 @@ In your project's Gruntfile, add a section named `template_block` to the data ob
 grunt.initConfig({
   template_block: {
     your_target: {
-      options: {
-        src: 'index.tmp.html',
-        dest: 'index.html',
-        templatesDir: 'templates'
-      }
+      src: 'index.tmp.html',
+      dest: 'index.html',
+      templatesDir: 'templates'
     }
   },
 })

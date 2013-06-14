@@ -31,11 +31,9 @@ module.exports = function(grunt) {
     // Configuration to be run (and then tested).
     template_block: {
       build: {
-        options: {
-          src: 'test/index.tmp.html',
-          dest: 'test/index.html',
-          templatesDir: 'test/templates'
-        }
+        src: 'test/index.dev.html',
+        dest: 'test/index.html',
+        templatesDir: 'test/templates'
       }
     },
 

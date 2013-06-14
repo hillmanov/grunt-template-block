@@ -14,15 +14,14 @@ module.exports = function(grunt) {
   // creation: http://gruntjs.com/creating-tasks
 
   grunt.registerMultiTask('template_block', 'Your task description goes here.', function() {
-    var src             = this.data.options.src,
-        dest            = this.data.options.dest,
-        templatesDir    = this.data.options.templatesDir,
+    var src             = this.data.src,
+        dest            = this.data.dest,
+        templatesDir    = this.data.templatesDir,
         templateBuilder = '',
         groups,
         indentation,
         srcText,
         destText;
-
 
     if (!grunt.file.exists(src)) {
       grunt.log.warn('Source file "' + src + '" not found.');
