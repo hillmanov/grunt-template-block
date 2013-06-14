@@ -1,7 +1,7 @@
 {
   "name": "grunt-template-block",
-  "description": "AngularJS templates - develop them as if they will be brought in through AJAX, but have them copy-pasted into script tags automatic",
-  "version": "0.1.0",
+  "description": "AngularJS templates - develop them as if they will be brought in through AJAX, but have them copy-pasted into script tags automatically",
+  "version": "0.2.0",
   "homepage": "https://github.com/hillmanov/grunt-template-block",
   "author": {
     "name": "Scott Hillman",

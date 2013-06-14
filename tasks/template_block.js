@@ -39,7 +39,8 @@ module.exports = function(grunt) {
     indentation = groups[1];
 
     grunt.file.recurse(templatesDir, function(abspath, rootdir, subdir, filename) {
-      templateBuilder += indentation + '<script type="text/ng-template" id="' + filename + '">\n';
+      var fileId = [subdir, filename].join('/').replace(/^\//, '');
+      templateBuilder += indentation + '<script type="text/ng-template" id="' + fileId + '">\n';
       templateBuilder += grunt.file.read(abspath).replace(/^(.*)$/igm, indentation + indentation + '$1') + '\n';
       templateBuilder += indentation + '</script>\n';
     });
